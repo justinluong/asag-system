@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "asag-system"
+version = "0.1.0"
+description = ""
+authors = ["Justin <justinluong1@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+datasets = "^2.19.1"
+transformers = {extras = ["torch"], version = "^4.40.2"}
+matplotlib = "^3.8.4"
+torch = "^2.3.0"
+scikit-learn = "^1.4.2"
+
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
